@@ -13,4 +13,4 @@ Open `index.html` in a browser, or serve the folder with any static web server.
 
 ## Before public launch
 
-Once a public domain is chosen, add that exact HTTPS address to the canonical, Open Graph image and sitemap URLs, then verify the site in Google Search Console and submit the sitemap.
+The live site is https://anup-house.pages.dev/. Verify it in Google Search Console and submit https://anup-house.pages.dev/sitemap.xml.
