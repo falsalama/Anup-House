@@ -1,0 +1,35 @@
+const translations = {
+  en: {},
+  hi: {
+    navStay: 'ठहरने की सुविधा', navPilgrimage: 'तीर्थ यात्रा', navLocation: 'स्थान', navContact: 'संपर्क करें', heroEyebrow: 'बोधगया, बिहार', heroTitle: 'बोधगया के हृदय में एक सरल और आत्मीय ठहराव।', heroIntro: 'कालचक्र मैदान के पास एक पारिवारिक गेस्ट हाउस—इस विशेष स्थान में आपके समय के लिए आरामदायक और सुविधाजनक आधार।', whatsapp: 'व्हाट्सऐप पर संदेश भेजें', contactAnup: 'अनुप हाउस से संपर्क करें', welcoming: 'मेहमानों का स्वागत', since: '2018 से', welcomeEyebrow: 'अनुप हाउस में आपका स्वागत है', welcomeTitle: 'बोधगया में एक दिन बिताने के बाद लौटने के लिए एक शांत जगह।', welcomeP1: 'अनुप हाउस में हमारा परिवार 2018 से मेहमानों की देखभाल कर रहा है। हम चीज़ों को सरल रखते हैं: साफ़-सुथरे, आरामदायक कमरे, गर्मजोशी से स्वागत और बोधगया के महत्वपूर्ण स्थानों के निकट एक उपयोगी स्थानीय ठिकाना।', welcomeP2: 'चाहे आप तीर्थ यात्रा, शिक्षाओं, किसी कार्यक्रम या शांत समय के लिए आ रहे हों, आपका स्वागत है।', pilgrimageEyebrow: 'तीर्थ यात्रा और शिक्षाएँ', pilgrimageTitle: 'बोधि वृक्ष और महाबोधि मंदिर के निकट।', pilgrimageP1: 'बोधगया विश्व के महान बौद्ध तीर्थस्थलों में से एक है। पास का महाबोधि मंदिर परिसर, पवित्र बोधि वृक्ष का घर, यूनेस्को विश्व धरोहर स्थल है।', pilgrimageP2: 'मंदिर आने वाले, वार्षिक मोनलम प्रार्थना सभा में शामिल होने वाले, या बोधगया में होने वाले शिक्षण और प्रार्थना कार्यक्रमों में भाग लेने वाले मेहमानों के लिए अनुप हाउस एक व्यावहारिक पारिवारिक ठिकाना है।', pilgrimageP3: 'वर्तमान कार्यक्रम की तिथियों और स्थानीय यात्रा सलाह के लिए आने से पहले परिवार से संपर्क करें।', stayEyebrow: 'आपका ठहराव', stayTitle: 'आरामदायक ज़रूरतें, ध्यान से रखी गईं।', roomsTitle: 'आरामदायक कमरे', roomsText: 'आरामदायक ठहराव के लिए सरल, रोशनी से भरे कमरे।', waterTitle: 'गर्म पानी', waterText: 'आपकी सुविधा के लिए गर्म पानी उपलब्ध है।', wifiText: 'घर से दूर रहते हुए भी जुड़े रहें।', cctvText: 'अतिरिक्त सुरक्षा के लिए परिसर में सीसीटीवी।', guestEyebrow: 'एक लौटने वाले अतिथि की बात', guestQuote: '“मैं शशि और उनके परिवार के साथ रहा, बहुत अच्छा समय बिताया और बोधगया में अच्छे दोस्त मिले। मैं खुशी से फिर लौट आया।”', locationEyebrow: 'हमारा स्थान', locationTitle: 'कालचक्र मैदान के पास, बोधगया।', locationText: 'पच्छट्टी में महारानी रोड पर सुविधाजनक स्थान; कालचक्र मैदान के उत्तर में और बोधगया के मंदिरों, कैफ़े और तीर्थस्थलों के निकट।', googleMaps: 'गूगल मैप्स में खोलें', directionsEyebrow: 'दिशा-निर्देश', directionsTitle: 'आसानी से मिल जाने वाला, सबके निकट।', directionsText: 'महारानी रोड पर, कालचक्र मैदान के उत्तर में स्थित अनुप हाउस तक पहुँचने के लिए मानचित्र का उपयोग करें।', directionsButton: 'दिशा-निर्देश पाएँ', contactEyebrow: 'संपर्क करें', contactTitle: 'अनुप हाउस के बारे में कोई सवाल?', contactText: 'सामान्य पूछताछ, स्थानीय जानकारी या आगमन की योजना में मदद के लिए कृपया सीधे परिवार से संपर्क करें।', whatsappUs: 'व्हाट्सऐप करें', footer: 'बोधगया, भारत में पारिवारिक गेस्ट हाउस।'
+  },
+  bo: {
+    navStay: 'ཞག་སྡོད།', navPilgrimage: 'གནས་མཇལ།', navLocation: 'ས་གནས།', navContact: 'འབྲེལ་གཏུག', heroEyebrow: 'བོད་ག་ཡ། བི་ཧཱར།', heroTitle: 'བོད་ག་ཡའི་ལྟེ་བར་སྟབས་བདེ་དང་དྲོ་བའི་ཞག་སྡོད།', heroIntro: 'ཀ་ལ་ཆཀྲའི་ཐང་གི་ཉེ་འགྲམ་དུ་ཡོད་པའི་ཁྱིམ་ཚང་གི་མགྲོན་ཁང་། དམིགས་བསལ་གྱི་གནས་འདིར་བཞུགས་རིང་བདེ་བའི་གཞི་གནས་ཤིག་ཡིན།', whatsapp: 'WhatsApp ནས་འཕྲིན་སྐུར།', contactAnup: 'ཨ་ནུཔ་ཧའུས་ལ་འབྲེལ་གཏུག', welcoming: 'མགྲོན་པོར་བསུ་བ།', since: '༢༠༡༨ ནས།', welcomeEyebrow: 'ཨ་ནུཔ་ཧའུས་ལ་ཕེབས་བསུ་ཞུ།', welcomeTitle: 'བོད་ག་ཡར་ཉིན་གང་བསྐྱོད་རྗེས་ངལ་གསོ་བྱེད་སའི་ཞི་འཇམ་གྱི་གནས།', welcomeP1: 'ཨ་ནུཔ་ཧའུས་སུ་ང་ཚོའི་ཁྱིམ་ཚང་གིས་༢༠༡༨ ལོ་ནས་མགྲོན་པོ་རྣམས་ལ་ཞབས་ཞུ་ཞུས་ཡོད། ང་ཚོས་གཙང་སྦྲ་དང་བདེ་བའི་ཁང་པ། དྲོ་བའི་ཕེབས་བསུ། དེ་བཞིན་བོད་ག་ཡའི་གལ་ཆེའི་གནས་ཁག་དང་ཉེ་བའི་གཞི་གནས་ཤིག་འབུལ་རྒྱུ་ཡིན།', welcomeP2: 'གནས་མཇལ། ཆོས་ཁྲིད། དུས་སྟོན། ཡང་ན་ངལ་གསོ་བའི་ཆེད་དུ་ཕེབས་ཀྱང་། ང་ཚོས་དགའ་བསུ་ཞུ།', pilgrimageEyebrow: 'གནས་མཇལ་དང་ཆོས་ཁྲིད།', pilgrimageTitle: 'བྱང་ཆུབ་ཤིང་དང་མ་ཧཱ་བོ་དྷི་མཆོད་རྟེན་གྱི་ཉེ་འགྲམ།', pilgrimageP1: 'བོད་ག་ཡ་ནི་འཛམ་གླིང་གི་ནང་པའི་གནས་མཇལ་གལ་ཆེ་ཤོས་ཀྱི་གནས་ཤིག་ཡིན། བྱང་ཆུབ་ཤིང་ཡོད་པའི་མ་ཧཱ་བོ་དྷི་མཆོད་རྟེན་གྱི་ཁུལ་ནི་ UNESCO འཛམ་གླིང་ཤུལ་བཞག་གི་གནས་ཡིན།', pilgrimageP2: 'མཆོད་རྟེན་མཇལ་བ། ལོ་རེའི་སྨོན་ལམ་དུ་ཞུགས་པ། ཡང་ན་བོད་ག་ཡར་འཚོགས་པའི་ཆོས་ཁྲིད་དང་སྨོན་ལམ་གྱི་ལས་རིམ་ལ་ཞུགས་པའི་མགྲོན་པོ་རྣམས་ལ་ཨ་ནུཔ་ཧའུས་ནི་སྟབས་བདེའི་ཁྱིམ་ཚང་གི་གཞི་གནས་ཤིག་ཡིན།', pilgrimageP3: 'ད་ལྟའི་ལས་རིམ་གྱི་ཚེས་གྲངས་དང་ས་གནས་ཀྱི་འགྲུལ་བསྐྱོད་བསླབ་བྱ་ཤེས་འདོད་ན། ཕེབས་པའི་སྔོན་ལ་ཁྱིམ་ཚང་དང་འབྲེལ་གཏུག་གནང་།', stayEyebrow: 'ཁྱེད་ཀྱི་ཞག་སྡོད།', stayTitle: 'བདེ་བའི་དགོས་མཁོ། ལེགས་པར་བདག་སྐྱོང་བྱས་པ།', roomsTitle: 'བདེ་བའི་ཁང་པ།', roomsText: 'ངལ་གསོའི་ཞག་སྡོད་ཆེད་དུ་འོད་འཕྲོ་བའི་སྟབས་བདེའི་ཁང་པ།', waterTitle: 'ཆུ་ཚ་པོ།', waterText: 'ཁྱེད་ཀྱི་བདེ་བའི་ཆེད་དུ་ཆུ་ཚ་པོ་ཡོད།', wifiText: 'ཕྱི་ལོགས་སུ་ཡོད་ཀྱང་འབྲེལ་མཐུད་ཐུབ།', cctvText: 'སེམས་བདེ་བའི་ཆེད་དུ་གནས་ཡུལ་དུ་ CCTV ཡོད།', guestEyebrow: 'ཕྱིར་ལོག་མགྲོན་པོ་ཞིག', guestQuote: '“ང་ཤ་ཤི་དང་ཁོང་གི་ཁྱིམ་ཚང་དང་མཉམ་དུ་བསྡད་པ་ཡིན། དེར་དུས་ཚོད་ཡག་པོ་བསྐྱལ་ཞིང་། བོད་ག་ཡར་གྲོགས་པོ་བཟང་པོ་རྣམས་དང་འཕྲད་བྱུང་། ང་དགའ་པོས་ཕྱིར་ཡང་ལོག་ཡོད།”', locationEyebrow: 'ང་ཚོའི་ས་གནས།', locationTitle: 'ཀ་ལ་ཆཀྲའི་ཐང་གི་ཉེ་འགྲམ། བོད་ག་ཡ།', locationText: 'པཙྪཊིར་ཡོད་པའི་མ་ཧཱ་ར་ནི་ལམ་དུ་སྟབས་བདེར་ཡོད། ཀ་ལ་ཆཀྲའི་ཐང་གི་བྱང་ཕྱོགས་དང་། བོད་ག་ཡའི་མཆོད་རྟེན། ཇ་ཁང་། གནས་མཇལ་གྱི་ས་ཆ་ཁག་དང་ཉེ།', googleMaps: 'Google Maps ནང་ཁ་ཕྱེ།', directionsEyebrow: 'ཁ་ཕྱོགས།', directionsTitle: 'འཚོལ་སླ་བ། གལ་ཆེའི་ས་ཆ་དང་ཉེ།', directionsText: 'ཀ་ལ་ཆཀྲའི་ཐང་གི་བྱང་ཕྱོགས་ཀྱི་མ་ཧཱ་ར་ནི་ལམ་དུ་ཡོད་པའི་ཨ་ནུཔ་ཧའུས་ལ་ཕེབས་པར་ས་ཁྲ་སྤྱོད།', directionsButton: 'ཁ་ཕྱོགས་ལེན།', contactEyebrow: 'འབྲེལ་གཏུག', contactTitle: 'ཨ་ནུཔ་ཧའུས་སྐོར་ལ་དྲི་བ་ཡོད་དམ།', contactText: 'སྤྱིར་བཏང་གི་འདྲི་རྩད། ས་གནས་ཀྱི་ཆ་འཕྲིན། ཡང་ན་ཕེབས་འཆར་གྱི་རོགས་རམ་ཆེད་དུ་ཁྱིམ་ཚང་ལ་ཐད་ཀར་འབྲེལ་གཏུག་གནང་།', whatsappUs: 'WhatsApp གནང་།', footer: 'རྒྱ་གར་བོད་ག་ཡར་ཡོད་པའི་ཁྱིམ་ཚང་གི་མགྲོན་ཁང་།'
+  }
+};
+
+const languageButtons = document.querySelectorAll('[data-language]');
+const defaultLanguage = new URLSearchParams(window.location.search).get('lang') || localStorage.getItem('anup-house-language') || 'en';
+
+function setLanguage(language) {
+  const selected = translations[language] ? language : 'en';
+  document.documentElement.lang = selected === 'bo' ? 'bo' : selected;
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const key = element.dataset.i18n;
+    element.textContent = translations[selected][key] || translations.en[key] || element.dataset.defaultText || element.textContent;
+  });
+  languageButtons.forEach((button) => {
+    const active = button.dataset.language === selected;
+    button.classList.toggle('is-active', active);
+    button.setAttribute('aria-pressed', String(active));
+  });
+  localStorage.setItem('anup-house-language', selected);
+  const url = new URL(window.location.href);
+  selected === 'en' ? url.searchParams.delete('lang') : url.searchParams.set('lang', selected);
+  history.replaceState({}, '', url);
+}
+
+document.querySelectorAll('[data-i18n]').forEach((element) => { element.dataset.defaultText = element.textContent; });
+languageButtons.forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.language)));
+setLanguage(defaultLanguage);
+document.getElementById('year').textContent = new Date().getFullYear();
