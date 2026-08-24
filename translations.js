@@ -48,10 +48,19 @@ Object.assign(translations, {
 });
 
 const languageSwitcher = document.querySelector('.language-switch');
-const languageButtons = document.querySelectorAll('[data-language]');
+const languageLinks = document.querySelectorAll('[data-language]');
 const currentLanguage = document.getElementById('current-language');
 const currentLanguageMarker = document.getElementById('current-language-marker');
-const defaultLanguage = new URLSearchParams(window.location.search).get('lang') || localStorage.getItem('anup-house-language') || 'en';
+const languagePaths = {
+  en: '/', hi: '/hi/', bo: '/bo/', ja: '/ja/', th: '/th/', vi: '/vi/', ko: '/ko/',
+  'zh-CN': '/zh-cn/', 'zh-TW': '/zh-tw/', 'yue-HK': '/yue-hk/', my: '/my/', lo: '/lo/'
+};
+const pageLanguage = document.documentElement.dataset.language || 'en';
+const queryLanguage = new URLSearchParams(window.location.search).get('lang');
+if (queryLanguage && languagePaths[queryLanguage] && queryLanguage !== pageLanguage) {
+  window.location.replace(`${languagePaths[queryLanguage]}${window.location.hash}`);
+}
+const defaultLanguage = translations[pageLanguage] ? pageLanguage : 'en';
 
 function setLanguage(language) {
   const selected = translations[language] ? language : 'en';
@@ -60,25 +69,18 @@ function setLanguage(language) {
     const key = element.dataset.i18n;
     element.textContent = translations[selected][key] || translations.en[key] || element.dataset.defaultText || element.textContent;
   });
-  languageButtons.forEach((button) => {
-    const active = button.dataset.language === selected;
-    button.setAttribute('aria-current', String(active));
+  languageLinks.forEach((link) => {
+    const active = link.dataset.language === selected;
+    active ? link.setAttribute('aria-current', 'page') : link.removeAttribute('aria-current');
     if (active) {
-      currentLanguage.textContent = button.lastElementChild.textContent;
-      currentLanguageMarker.replaceChildren(button.querySelector('.language-marker').firstChild.cloneNode(true));
+      currentLanguage.textContent = link.lastElementChild.textContent;
+      currentLanguageMarker.replaceChildren(link.querySelector('.language-marker').firstChild.cloneNode(true));
     }
   });
   localStorage.setItem('anup-house-language', selected);
-  const url = new URL(window.location.href);
-  selected === 'en' ? url.searchParams.delete('lang') : url.searchParams.set('lang', selected);
-  history.replaceState({}, '', url);
 }
 
 document.querySelectorAll('[data-i18n]').forEach((element) => { element.dataset.defaultText = element.textContent; });
-languageButtons.forEach((button) => button.addEventListener('click', () => {
-  setLanguage(button.dataset.language);
-  languageSwitcher.removeAttribute('open');
-}));
 languageSwitcher.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
     languageSwitcher.removeAttribute('open');
