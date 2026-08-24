@@ -26,7 +26,10 @@ Object.assign(translations, {
   }
 });
 
-const languageSelect = document.getElementById('language-select');
+const languageSwitcher = document.querySelector('.language-switch');
+const languageButtons = document.querySelectorAll('[data-language]');
+const currentLanguage = document.getElementById('current-language');
+const currentLanguageMarker = document.getElementById('current-language-marker');
 const defaultLanguage = new URLSearchParams(window.location.search).get('lang') || localStorage.getItem('anup-house-language') || 'en';
 
 function setLanguage(language) {
@@ -36,7 +39,14 @@ function setLanguage(language) {
     const key = element.dataset.i18n;
     element.textContent = translations[selected][key] || translations.en[key] || element.dataset.defaultText || element.textContent;
   });
-  languageSelect.value = selected;
+  languageButtons.forEach((button) => {
+    const active = button.dataset.language === selected;
+    button.setAttribute('aria-current', String(active));
+    if (active) {
+      currentLanguage.textContent = button.lastElementChild.textContent;
+      currentLanguageMarker.replaceChildren(button.querySelector('.language-marker').firstChild.cloneNode(true));
+    }
+  });
   localStorage.setItem('anup-house-language', selected);
   const url = new URL(window.location.href);
   selected === 'en' ? url.searchParams.delete('lang') : url.searchParams.set('lang', selected);
@@ -44,6 +54,15 @@ function setLanguage(language) {
 }
 
 document.querySelectorAll('[data-i18n]').forEach((element) => { element.dataset.defaultText = element.textContent; });
-languageSelect.addEventListener('change', () => setLanguage(languageSelect.value));
+languageButtons.forEach((button) => button.addEventListener('click', () => {
+  setLanguage(button.dataset.language);
+  languageSwitcher.removeAttribute('open');
+}));
+languageSwitcher.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    languageSwitcher.removeAttribute('open');
+    languageSwitcher.querySelector('summary').focus();
+  }
+});
 setLanguage(defaultLanguage);
 document.getElementById('year').textContent = new Date().getFullYear();

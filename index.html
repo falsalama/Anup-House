@@ -54,18 +54,22 @@
         <a href="#location" data-i18n="navLocation">Location</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
-      <div class="language-switch">
-        <span class="language-icon" aria-hidden="true">🌐</span>
-        <select id="language-select" aria-label="Choose language">
-          <option value="en">English</option>
-          <option value="hi">🇮🇳 हिन्दी</option>
-          <option value="bo">☸ བོད་ཡིག</option>
-          <option value="ja">🇯🇵 日本語</option>
-          <option value="th">🇹🇭 ไทย</option>
-          <option value="vi">🇻🇳 Tiếng Việt</option>
-          <option value="ko">🇰🇷 한국어</option>
-        </select>
-      </div>
+      <details class="language-switch">
+        <summary aria-label="Choose language">
+          <span id="current-language-marker" class="language-marker" aria-hidden="true">🌐</span>
+          <span id="current-language">English</span>
+          <span class="language-chevron" aria-hidden="true">⌄</span>
+        </summary>
+        <div class="language-menu" aria-label="Languages">
+          <button type="button" data-language="en"><span class="language-marker" aria-hidden="true">🌐</span><span>English</span></button>
+          <button type="button" data-language="hi"><span class="language-marker" aria-hidden="true">🇮🇳</span><span>हिन्दी</span></button>
+          <button type="button" data-language="bo"><span class="language-marker" aria-hidden="true"><img src="assets/images/tibetan-flag.svg" alt="" /></span><span>བོད་ཡིག</span></button>
+          <button type="button" data-language="ja"><span class="language-marker" aria-hidden="true">🇯🇵</span><span>日本語</span></button>
+          <button type="button" data-language="th"><span class="language-marker" aria-hidden="true">🇹🇭</span><span>ไทย</span></button>
+          <button type="button" data-language="vi"><span class="language-marker" aria-hidden="true">🇻🇳</span><span>Tiếng Việt</span></button>
+          <button type="button" data-language="ko"><span class="language-marker" aria-hidden="true">🇰🇷</span><span>한국어</span></button>
+        </div>
+      </details>
     </header>
 
     <main id="top">
