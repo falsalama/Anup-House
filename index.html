@@ -54,14 +54,17 @@
         <a href="#location" data-i18n="navLocation">Location</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
-      <div class="language-switch" aria-label="Choose language">
-        <button type="button" data-language="en" aria-pressed="true">ENG</button>
-        <button type="button" data-language="hi" aria-pressed="false">हिन्दी</button>
-        <button type="button" data-language="bo" aria-pressed="false">བོད་ཡིག</button>
-        <button type="button" data-language="ja" aria-pressed="false">日本語</button>
-        <button type="button" data-language="th" aria-pressed="false">ไทย</button>
-        <button type="button" data-language="vi" aria-pressed="false">Tiếng Việt</button>
-        <button type="button" data-language="ko" aria-pressed="false">한국어</button>
+      <div class="language-switch">
+        <span class="language-icon" aria-hidden="true">🌐</span>
+        <select id="language-select" aria-label="Choose language">
+          <option value="en">English</option>
+          <option value="hi">🇮🇳 हिन्दी</option>
+          <option value="bo">☸ བོད་ཡིག</option>
+          <option value="ja">🇯🇵 日本語</option>
+          <option value="th">🇹🇭 ไทย</option>
+          <option value="vi">🇻🇳 Tiếng Việt</option>
+          <option value="ko">🇰🇷 한국어</option>
+        </select>
       </div>
     </header>
 
